@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="skills.css">
+    <script src="/commons/commons.js"></script>
+    <script src="test.js"></script>
+    <title>Stata</title>
+</head>
+<body>
+    <div w3-include-html="../commons/header.html"></div>
+    <br>
+    <div class="container-fluid">
+        <div class="row mb-4 g-4 justify-content-center">
+            <div class="order-2 order-sm-2 order-lg-1col-lg-2 col-md-2 col-xs-10">
+                <div class="col-md">
+                    <div class="side_feedback">
+                        <div id="myBtnContainer">
+                            <button class="btn" onclick="filterSelection('all')"> Show all</button>
+                            <button class="btn" onclick="filterSelection('easy')"> Easy</button>
+                            <button class="btn" onclick="filterSelection('intermediate')"> Intermediate</button>
+                            <button class="btn" onclick="filterSelection('hard')"> Hard</button>
+                        </div>
+                        <div class="feedback_box">
+                            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeOifSPv551j2BcFLzhkHXiBE94Dw1YqkRMi7oP8pYnsfBLCQ/viewform">Give Us Feedback</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md ">
+                    <div class="side_projectfil">
+                        <div id="myBtnContainer">
+                            <button class="btn" onclick="filterSelection('all')"> Show all</button>
+                            <button class="btn" onclick="filterSelection('exercises')"> Exercises</button>
+                            <button class="btn" onclick="filterSelection('projects')"> Projects</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 order-sm-1 order-lg-2 col-10">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-auto g-5">
+                    <div class="col-12">
+                        <div class="container_tag">
+                            <h3 class="tag">LEARN</h3>
+                        </div>
+                        <div class="container_box row">
+                            <div class="col-6">
+                                <div class="buttons_container row row-cols-auto">
+                                    <div class="col-md-4 mt-4 mx-1"><p><a href="https://edu.gcfglobal.org/en/subjects/office/" class="easyskill_button" target="_blank" type="button">GCFGlobal</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-2"><p><a href="https://www.skillshare.com/browse?seeAll=1&tagSlug=microsoft-office&sort=rating&time=default&length=all&enrollmentType=both&page=0" class="medskill_button" target="_blank" type="button">Skill Share</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-1"><p><a href="https://support.microsoft.com/en-us/training" class="hardskill_button" target="_blank" type="button">Microsoft</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-2"><p><a href="https://www.youtube.com/watch?v=DzTCFsdxMP4&ab_channel=SimonSezIT" class="medskill_button" target="_blank" type="button">YouTube</a></p></div>                                    
+                                </div>
+                            </div>    
+                        </div>
+                    </div> 
+                    <div class="col-12"> 
+                        <div class="container_tag">
+                            <h3 class="tag">PRACTICE</h3>
+                        </div>
+                        <div class="container_box row">
+                            <div class="col-6">
+                                <div class="buttons_container row row-cols-auto">
+                                    <div class="col-md-4 mt-4 mx-1"><p><a href="https://www.wiseowl.co.uk/ms-office/skill/" class="easyskill_button" target="_blank" type="button">WiseOwl</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-1"><p><a href="https://www.teststeststests.com/microsoft-office/microsoft-office-index.html" class="medskill_button" target="_blank" type="button">Tests Tutorial</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-2"><p><a href="https://www.isograd.com/EN/freetestselection.php" class="hardskill_button" target="_blank" type="button">IsoGrad</a></p></div>
+                                    <div class="col-md-4 mt-4 mx-2"><p><a href="#" class="medskill_button" target="_blank" type="button">Cant find</a></p></div>
+                                </div>
+                            </div>    
+                        </div>    
+                    </div> 
+                    <div class="col-12"> 
+                        <div class="container_tag">
+                            <h3 class="tag">CERTIFY</h3>
+                        </div>
+                        <div class="container_box row">
+                            <div class="col-12">
+                                <div class="buttons_container row row-cols-auto">
+                                    <div class="col-xl-2 col-lg-6 col-md-6 mt-4"><p><a href="https://support.microsoft.com/en-us/topic/earn-a-microsoft-office-specialist-mos-certification-0885c944-167c-51ea-1cdc-8f65952bd1b8" class="skill_button" target="_blank" type="button">Microsoft</a></p></div>
+                                    <div class="col-xl-2 col-lg-6 col-md-6 mt-4"><p><a href="https://docs.microsoft.com/en-us/learn/certifications/microsoft-office-specialist-expert-2019/" class="skill_button" target="_blank" type="button">Microsoft</a></p></div>
+                                    <div class="col-xl-2 col-lg-6 col-md-6 mt-4"><p><a href="#" class="skill_button" target="_blank" type="button">Can't find</a></p></div>
+                                    <div class="col-xl-2 col-lg-6 col-md-6 mt-4"><p><a href="#" class="skill_button" target="_blank" type="button">LinkedIn</a></p></div>
+                                </div>
+                            </div>    
+                        </div>    
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="../commons/footer.html"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS files/filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script>includeHTML(); </script>
+</body>
+</html>
